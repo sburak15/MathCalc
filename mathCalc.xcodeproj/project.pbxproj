@@ -12,6 +12,7 @@
 		941C3A141F27C791001DA9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941C3A121F27C791001DA9FB /* Main.storyboard */; };
 		941C3A161F27C791001DA9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941C3A151F27C791001DA9FB /* Assets.xcassets */; };
 		941C3A191F27C791001DA9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941C3A171F27C791001DA9FB /* LaunchScreen.storyboard */; };
+		94CB004C1F27E31800E13491 /* GeometryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB004B1F27E31800E13491 /* GeometryTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		941C3A151F27C791001DA9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		941C3A181F27C791001DA9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		941C3A1A1F27C791001DA9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94CB004B1F27E31800E13491 /* GeometryTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				941C3A0E1F27C791001DA9FB /* AppDelegate.swift */,
 				941C3A101F27C791001DA9FB /* ViewController.swift */,
 				941C3A121F27C791001DA9FB /* Main.storyboard */,
+				94CB004B1F27E31800E13491 /* GeometryTabController.swift */,
 				941C3A151F27C791001DA9FB /* Assets.xcassets */,
 				941C3A171F27C791001DA9FB /* LaunchScreen.storyboard */,
 				941C3A1A1F27C791001DA9FB /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CB004C1F27E31800E13491 /* GeometryTabController.swift in Sources */,
 				941C3A111F27C791001DA9FB /* ViewController.swift in Sources */,
 				941C3A0F1F27C791001DA9FB /* AppDelegate.swift in Sources */,
 			);
@@ -301,6 +305,7 @@
 				941C3A1F1F27C791001DA9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
