@@ -34,7 +34,11 @@ class SquareAreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /*func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }*/
     
     
 }
