@@ -12,7 +12,10 @@
 		941C3A141F27C791001DA9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941C3A121F27C791001DA9FB /* Main.storyboard */; };
 		941C3A161F27C791001DA9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941C3A151F27C791001DA9FB /* Assets.xcassets */; };
 		941C3A191F27C791001DA9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941C3A171F27C791001DA9FB /* LaunchScreen.storyboard */; };
-		94CB004C1F27E31800E13491 /* GeometryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB004B1F27E31800E13491 /* GeometryTabController.swift */; };
+		943458E21F28C79D00C1BFB4 /* SquareAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943458E11F28C79D00C1BFB4 /* SquareAreaViewController.swift */; };
+		943458E41F28C7A400C1BFB4 /* CircleAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943458E31F28C7A400C1BFB4 /* CircleAreaViewController.swift */; };
+		943458E61F28C88E00C1BFB4 /* TriAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943458E51F28C88E00C1BFB4 /* TriAreaViewController.swift */; };
+		943458E81F28C96900C1BFB4 /* RectAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943458E71F28C96900C1BFB4 /* RectAreaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		941C3A151F27C791001DA9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		941C3A181F27C791001DA9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		941C3A1A1F27C791001DA9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94CB004B1F27E31800E13491 /* GeometryTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryTabController.swift; sourceTree = "<group>"; };
+		943458E11F28C79D00C1BFB4 /* SquareAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareAreaViewController.swift; sourceTree = "<group>"; };
+		943458E31F28C7A400C1BFB4 /* CircleAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleAreaViewController.swift; sourceTree = "<group>"; };
+		943458E51F28C88E00C1BFB4 /* TriAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriAreaViewController.swift; sourceTree = "<group>"; };
+		943458E71F28C96900C1BFB4 /* RectAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectAreaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				941C3A0E1F27C791001DA9FB /* AppDelegate.swift */,
 				941C3A101F27C791001DA9FB /* ViewController.swift */,
 				941C3A121F27C791001DA9FB /* Main.storyboard */,
-				94CB004B1F27E31800E13491 /* GeometryTabController.swift */,
+				943458E31F28C7A400C1BFB4 /* CircleAreaViewController.swift */,
+				943458E11F28C79D00C1BFB4 /* SquareAreaViewController.swift */,
+				943458E71F28C96900C1BFB4 /* RectAreaViewController.swift */,
+				943458E51F28C88E00C1BFB4 /* TriAreaViewController.swift */,
 				941C3A151F27C791001DA9FB /* Assets.xcassets */,
 				941C3A171F27C791001DA9FB /* LaunchScreen.storyboard */,
 				941C3A1A1F27C791001DA9FB /* Info.plist */,
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CB004C1F27E31800E13491 /* GeometryTabController.swift in Sources */,
 				941C3A111F27C791001DA9FB /* ViewController.swift in Sources */,
+				943458E81F28C96900C1BFB4 /* RectAreaViewController.swift in Sources */,
 				941C3A0F1F27C791001DA9FB /* AppDelegate.swift in Sources */,
+				943458E41F28C7A400C1BFB4 /* CircleAreaViewController.swift in Sources */,
+				943458E61F28C88E00C1BFB4 /* TriAreaViewController.swift in Sources */,
+				943458E21F28C79D00C1BFB4 /* SquareAreaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

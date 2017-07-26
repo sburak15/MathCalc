@@ -121,7 +121,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Triangle"/>
                                 <connections>
-                                    <segue destination="e8P-Lj-VGg" kind="show" id="veT-F8-skx"/>
+                                    <segue destination="e8P-Lj-VGg" kind="show" id="UKg-GW-KGU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p47-LZ-Wpb">
+                                <rect key="frame" x="313" y="580" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="JHz-0X-2A2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="274" y="-788"/>
         </scene>
-        <!--View Controller-->
+        <!--Circle Area View Controller-->
         <scene sceneID="eR7-yQ-ea7">
             <objects>
-                <viewController id="E0K-1Y-qi1" sceneMemberID="viewController">
+                <viewController id="E0K-1Y-qi1" customClass="CircleAreaViewController" customModule="mathCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DTa-PK-O5z"/>
                         <viewControllerLayoutGuide type="bottom" id="OsK-5r-D0O"/>
@@ -159,11 +167,14 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV6-sw-FC9" userLabel="btnCircSolve" customClass="UITabController" customModule="mathCalc" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV6-sw-FC9" userLabel="btnCircSolve">
                                 <rect key="frame" x="129" y="393" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="circAreaSolveBtn:" destination="E0K-1Y-qi1" eventType="touchUpInside" id="ZKE-64-HlI"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter radius" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fk-MG-x50">
                                 <rect key="frame" x="18" y="324" width="344" height="30"/>
@@ -184,15 +195,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="circAreaAnswer" destination="XuT-Gw-4Qb" id="EHf-Dc-xXd"/>
+                        <outlet property="circAreaRadiusTextField" destination="7fk-MG-x50" id="BO5-Ej-NQ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPh-cG-Aj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-1921"/>
+            <point key="canvasLocation" x="1054" y="-1945"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Geometry Tab Controller-->
         <scene sceneID="eAy-Wm-wWC">
             <objects>
-                <tabBarController id="f0k-HE-fLd" sceneMemberID="viewController">
+                <tabBarController id="f0k-HE-fLd" customClass="GeometryTabController" customModule="mathCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="rTj-Rd-wxw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -205,12 +220,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4r-9S-zeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-690" y="-41"/>
+            <point key="canvasLocation" x="-598" y="-64"/>
         </scene>
-        <!--View Controller-->
+        <!--Square Area View Controller-->
         <scene sceneID="82B-Ef-e3G">
             <objects>
-                <viewController id="QYu-BO-G6g" sceneMemberID="viewController">
+                <viewController id="QYu-BO-G6g" customClass="SquareAreaViewController" customModule="mathCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N1Q-3z-9lV"/>
                         <viewControllerLayoutGuide type="bottom" id="H5m-uD-1ln"/>
@@ -231,6 +246,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="squareAreaSolveBtn:" destination="QYu-BO-G6g" eventType="touchUpInside" id="2Lg-iy-KfO"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter side length" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42W-gc-PXs">
                                 <rect key="frame" x="18" y="324" width="344" height="30"/>
@@ -258,15 +276,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="squareAreaAnswer" destination="PeO-eD-fgr" id="mV7-Uh-T1y"/>
+                        <outlet property="squareAreaSideTextField" destination="42W-gc-PXs" id="loK-7E-xE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOI-Ly-VHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-1227"/>
+            <point key="canvasLocation" x="2431" y="-1576"/>
         </scene>
-        <!--View Controller-->
+        <!--Tri Area View Controller-->
         <scene sceneID="c9c-z6-73s">
             <objects>
-                <viewController id="e8P-Lj-VGg" sceneMemberID="viewController">
+                <viewController id="e8P-Lj-VGg" customClass="TriAreaViewController" customModule="mathCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Vh-ud-Z56"/>
                         <viewControllerLayoutGuide type="bottom" id="c3l-VO-0u4"/>
@@ -289,12 +311,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wg5-fx-TOu" userLabel="btnTriSolve">
-                                <rect key="frame" x="129" y="403" width="116" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Solve"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter base" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3F-zT-xHe">
                                 <rect key="frame" x="19" y="284" width="344" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -319,18 +335,32 @@
                                     <segue destination="eC8-CX-W1O" kind="show" id="3MM-1q-ayK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot1-dL-Tyh" userLabel="btnTriSolve">
+                                <rect key="frame" x="146" y="402" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="triAreaSolveBtn:" destination="e8P-Lj-VGg" eventType="touchUpInside" id="Eyg-C3-GC3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="triAreaAnswer" destination="nHk-uy-7gn" id="30d-Iw-fxi"/>
+                        <outlet property="triAreaBaseTextField" destination="M3F-zT-xHe" id="qQc-pd-GYK"/>
+                        <outlet property="triAreaHeightTextField" destination="Huc-Z2-wXQ" id="x1r-4c-aO6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFg-N5-ZWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="190"/>
+            <point key="canvasLocation" x="992.79999999999995" y="189.3553223388306"/>
         </scene>
-        <!--View Controller-->
+        <!--Rect Area View Controller-->
         <scene sceneID="ATY-X3-UcN">
             <objects>
-                <viewController id="DTn-Qt-YoF" sceneMemberID="viewController">
+                <viewController id="DTn-Qt-YoF" customClass="RectAreaViewController" customModule="mathCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i6R-Ax-7u5"/>
                         <viewControllerLayoutGuide type="bottom" id="7Fp-nZ-cEF"/>
@@ -351,6 +381,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="rectAreaSolveBtn:" destination="DTn-Qt-YoF" eventType="touchUpInside" id="iyT-r6-xsc"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter length" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Msi-aO-nC2">
                                 <rect key="frame" x="19" y="284" width="344" height="30"/>
@@ -386,6 +419,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="rectAreaAnswer" destination="uwk-pF-CCV" id="N07-4q-Twx"/>
+                        <outlet property="rectAreaLengthTextField" destination="Msi-aO-nC2" id="O2q-Wh-6Jv"/>
+                        <outlet property="rectAreaWidthTextField" destination="HRR-fe-8wZ" id="1i3-eK-T4q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMn-ge-XK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,6 +431,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5f2-85-pRg"/>
+        <segue reference="3MM-1q-ayK"/>
     </inferredMetricsTieBreakers>
 </document>
