@@ -1147,6 +1147,9 @@
                                 <rect key="frame" x="313" y="580" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="U3v-X7-mBD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-5a-xUo">
                                 <rect key="frame" x="36" y="65.666666666666671" width="343" height="43"/>
@@ -2013,7 +2016,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JHz-0X-2A2"/>
-        <segue reference="8vI-7V-sUl"/>
+        <segue reference="U3v-X7-mBD"/>
+        <segue reference="6Sk-ID-Gb5"/>
     </inferredMetricsTieBreakers>
 </document>
