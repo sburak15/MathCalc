@@ -21,6 +21,8 @@
 		94D093181F2A246C00083348 /* RightRectPrismVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D093171F2A246C00083348 /* RightRectPrismVolumeViewController.swift */; };
 		94D0931A1F2A248300083348 /* CubeVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D093191F2A248300083348 /* CubeVolumeViewController.swift */; };
 		94D0931C1F2A249100083348 /* SphereVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0931B1F2A249100083348 /* SphereVolumeViewController.swift */; };
+		94D0931E1F2A8A1100083348 /* ParallelogramAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0931D1F2A8A1100083348 /* ParallelogramAreaViewController.swift */; };
+		94D093201F2A8A2300083348 /* TrapeAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0931F1F2A8A2300083348 /* TrapeAreaViewController.swift */; };
 		94D6C3C31F29244000F3A07D /* CirclePerimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C3C21F29244000F3A07D /* CirclePerimViewController.swift */; };
 		94D6C3C51F29246000F3A07D /* SquarePerimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C3C41F29246000F3A07D /* SquarePerimViewController.swift */; };
 		94D6C3C71F29247400F3A07D /* RectPerimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C3C61F29247400F3A07D /* RectPerimViewController.swift */; };
@@ -44,6 +46,8 @@
 		94D093171F2A246C00083348 /* RightRectPrismVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightRectPrismVolumeViewController.swift; sourceTree = "<group>"; };
 		94D093191F2A248300083348 /* CubeVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeVolumeViewController.swift; sourceTree = "<group>"; };
 		94D0931B1F2A249100083348 /* SphereVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereVolumeViewController.swift; sourceTree = "<group>"; };
+		94D0931D1F2A8A1100083348 /* ParallelogramAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallelogramAreaViewController.swift; sourceTree = "<group>"; };
+		94D0931F1F2A8A2300083348 /* TrapeAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrapeAreaViewController.swift; sourceTree = "<group>"; };
 		94D6C3C21F29244000F3A07D /* CirclePerimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePerimViewController.swift; sourceTree = "<group>"; };
 		94D6C3C41F29246000F3A07D /* SquarePerimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquarePerimViewController.swift; sourceTree = "<group>"; };
 		94D6C3C61F29247400F3A07D /* RectPerimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectPerimViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				941C3A0E1F27C791001DA9FB /* AppDelegate.swift */,
 				941C3A101F27C791001DA9FB /* ViewController.swift */,
 				941C3A121F27C791001DA9FB /* Main.storyboard */,
+				94D0931D1F2A8A1100083348 /* ParallelogramAreaViewController.swift */,
+				94D0931F1F2A8A2300083348 /* TrapeAreaViewController.swift */,
 				94D093191F2A248300083348 /* CubeVolumeViewController.swift */,
 				94D0931B1F2A249100083348 /* SphereVolumeViewController.swift */,
 				94D093171F2A246C00083348 /* RightRectPrismVolumeViewController.swift */,
@@ -135,6 +141,7 @@
 				TargetAttributes = {
 					941C3A0A1F27C791001DA9FB = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 4PRU5G4MBV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -186,6 +193,8 @@
 				94D6C3C71F29247400F3A07D /* RectPerimViewController.swift in Sources */,
 				94D6C3C91F29249700F3A07D /* TriPerimViewController.swift in Sources */,
 				943458E21F28C79D00C1BFB4 /* SquareAreaViewController.swift in Sources */,
+				94D0931E1F2A8A1100083348 /* ParallelogramAreaViewController.swift in Sources */,
+				94D093201F2A8A2300083348 /* TrapeAreaViewController.swift in Sources */,
 				94D093141F2A23EB00083348 /* PyraConeVolumeViewController.swift in Sources */,
 				94D6C3C31F29244000F3A07D /* CirclePerimViewController.swift in Sources */,
 				94D0931C1F2A249100083348 /* SphereVolumeViewController.swift in Sources */,
@@ -314,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PRU5G4MBV;
 				INFOPLIST_FILE = mathCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Samantha.mathCalc;
@@ -326,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PRU5G4MBV;
 				INFOPLIST_FILE = mathCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Samantha.mathCalc;
