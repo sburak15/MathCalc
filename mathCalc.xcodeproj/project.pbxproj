@@ -16,6 +16,11 @@
 		943458E41F28C7A400C1BFB4 /* CircleAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943458E31F28C7A400C1BFB4 /* CircleAreaViewController.swift */; };
 		943458E61F28C88E00C1BFB4 /* TriAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943458E51F28C88E00C1BFB4 /* TriAreaViewController.swift */; };
 		943458E81F28C96900C1BFB4 /* RectAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943458E71F28C96900C1BFB4 /* RectAreaViewController.swift */; };
+		94D093141F2A23EB00083348 /* PyraConeVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D093131F2A23EB00083348 /* PyraConeVolumeViewController.swift */; };
+		94D093161F2A244C00083348 /* PrismCylinVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D093151F2A244C00083348 /* PrismCylinVolumeViewController.swift */; };
+		94D093181F2A246C00083348 /* RightRectPrismVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D093171F2A246C00083348 /* RightRectPrismVolumeViewController.swift */; };
+		94D0931A1F2A248300083348 /* CubeVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D093191F2A248300083348 /* CubeVolumeViewController.swift */; };
+		94D0931C1F2A249100083348 /* SphereVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0931B1F2A249100083348 /* SphereVolumeViewController.swift */; };
 		94D6C3C31F29244000F3A07D /* CirclePerimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C3C21F29244000F3A07D /* CirclePerimViewController.swift */; };
 		94D6C3C51F29246000F3A07D /* SquarePerimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C3C41F29246000F3A07D /* SquarePerimViewController.swift */; };
 		94D6C3C71F29247400F3A07D /* RectPerimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C3C61F29247400F3A07D /* RectPerimViewController.swift */; };
@@ -34,6 +39,11 @@
 		943458E31F28C7A400C1BFB4 /* CircleAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleAreaViewController.swift; sourceTree = "<group>"; };
 		943458E51F28C88E00C1BFB4 /* TriAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriAreaViewController.swift; sourceTree = "<group>"; };
 		943458E71F28C96900C1BFB4 /* RectAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectAreaViewController.swift; sourceTree = "<group>"; };
+		94D093131F2A23EB00083348 /* PyraConeVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PyraConeVolumeViewController.swift; sourceTree = "<group>"; };
+		94D093151F2A244C00083348 /* PrismCylinVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrismCylinVolumeViewController.swift; sourceTree = "<group>"; };
+		94D093171F2A246C00083348 /* RightRectPrismVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightRectPrismVolumeViewController.swift; sourceTree = "<group>"; };
+		94D093191F2A248300083348 /* CubeVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeVolumeViewController.swift; sourceTree = "<group>"; };
+		94D0931B1F2A249100083348 /* SphereVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereVolumeViewController.swift; sourceTree = "<group>"; };
 		94D6C3C21F29244000F3A07D /* CirclePerimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePerimViewController.swift; sourceTree = "<group>"; };
 		94D6C3C41F29246000F3A07D /* SquarePerimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquarePerimViewController.swift; sourceTree = "<group>"; };
 		94D6C3C61F29247400F3A07D /* RectPerimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectPerimViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +83,11 @@
 				941C3A0E1F27C791001DA9FB /* AppDelegate.swift */,
 				941C3A101F27C791001DA9FB /* ViewController.swift */,
 				941C3A121F27C791001DA9FB /* Main.storyboard */,
+				94D093191F2A248300083348 /* CubeVolumeViewController.swift */,
+				94D0931B1F2A249100083348 /* SphereVolumeViewController.swift */,
+				94D093171F2A246C00083348 /* RightRectPrismVolumeViewController.swift */,
+				94D093151F2A244C00083348 /* PrismCylinVolumeViewController.swift */,
+				94D093131F2A23EB00083348 /* PyraConeVolumeViewController.swift */,
 				94D6C3C21F29244000F3A07D /* CirclePerimViewController.swift */,
 				94D6C3C41F29246000F3A07D /* SquarePerimViewController.swift */,
 				94D6C3C61F29247400F3A07D /* RectPerimViewController.swift */,
@@ -160,15 +175,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D093161F2A244C00083348 /* PrismCylinVolumeViewController.swift in Sources */,
+				94D093181F2A246C00083348 /* RightRectPrismVolumeViewController.swift in Sources */,
 				941C3A111F27C791001DA9FB /* ViewController.swift in Sources */,
 				943458E81F28C96900C1BFB4 /* RectAreaViewController.swift in Sources */,
 				941C3A0F1F27C791001DA9FB /* AppDelegate.swift in Sources */,
+				94D0931A1F2A248300083348 /* CubeVolumeViewController.swift in Sources */,
 				943458E41F28C7A400C1BFB4 /* CircleAreaViewController.swift in Sources */,
 				943458E61F28C88E00C1BFB4 /* TriAreaViewController.swift in Sources */,
 				94D6C3C71F29247400F3A07D /* RectPerimViewController.swift in Sources */,
 				94D6C3C91F29249700F3A07D /* TriPerimViewController.swift in Sources */,
 				943458E21F28C79D00C1BFB4 /* SquareAreaViewController.swift in Sources */,
+				94D093141F2A23EB00083348 /* PyraConeVolumeViewController.swift in Sources */,
 				94D6C3C31F29244000F3A07D /* CirclePerimViewController.swift in Sources */,
+				94D0931C1F2A249100083348 /* SphereVolumeViewController.swift in Sources */,
 				94D6C3C51F29246000F3A07D /* SquarePerimViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
