@@ -10,6 +10,21 @@ import UIKit
 
 class RightRectPrismVolumeViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var rightRectPrismVolumeAnswer: UILabel!
+    
+    @IBOutlet weak var rightRectPrismVolumeLengthTextField: UITextField!
+    @IBOutlet weak var rightRectPrismVolumeWidthTextField: UITextField!
+    @IBOutlet weak var rightRectPrismVolumeHeightTextField: UITextField!
+    
+    @IBAction func RightRectPrismVolumeSolveBtn(_ sender: Any) {
+        let rightRectPrismVolumeLength: Double = Double(rightRectPrismVolumeLengthTextField.text!) ?? 0
+        let rightRectPrismVolumeWidth: Double = Double(rightRectPrismVolumeWidthTextField.text!) ?? 0
+        let rightRectPrismVolumeHeight: Double = Double(rightRectPrismVolumeHeightTextField.text!) ?? 0
+        let volume = rightRectPrismVolumeLength * rightRectPrismVolumeWidth * rightRectPrismVolumeHeight
+        rightRectPrismVolumeAnswer.text = "Answer: " + String(volume) + " units³"
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

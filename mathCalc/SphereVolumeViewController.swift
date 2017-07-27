@@ -10,6 +10,16 @@ import UIKit
 
 class SphereVolumeViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var sphereVolumeRadiusTextField: UITextField!
+    
+    @IBOutlet weak var sphereVolumeAnswer: UILabel!
+    
+    @IBAction func SphereVolumeSolveBtn(_ sender: Any) {
+        let sphereVolumeRadius: Double = Double(sphereVolumeRadiusTextField.text!) ?? 0
+        let volume = (4 * 3.14 * (sphereVolumeRadius * sphereVolumeRadius * sphereVolumeRadius))/3
+        sphereVolumeAnswer.text = "Answer: " + String(volume) + " units³"
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

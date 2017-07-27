@@ -10,8 +10,16 @@ import UIKit
 
 class PyraConeVolumeViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var pyraConeVolumeHeightTextField: UITextField!
+    @IBOutlet weak var pyraConeVolumeBATextField: UITextField!
+    
+    @IBOutlet weak var PyraConeVolumeAnswer: UILabel!
     
     @IBAction func PyraConeVolumeSolveBtn(_ sender: Any) {
+        let pyraConeVolumeHeight: Double = Double(pyraConeVolumeHeightTextField.text!) ?? 0
+        let pyraConeVolumeBA: Double = Double(pyraConeVolumeBATextField.text!) ?? 0
+        let volume = (pyraConeVolumeBA * pyraConeVolumeHeight)/3
+        PyraConeVolumeAnswer.text = "Answer: " + String(volume) + " units³"
     }
     
     override func viewDidLoad() {
