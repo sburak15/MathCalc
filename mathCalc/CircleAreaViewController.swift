@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CircleAreaViewController: UIViewController {
+class CircleAreaViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var circAreaAnswer: UILabel!
     @IBOutlet weak var circAreaRadiusTextField: UITextField!
@@ -33,11 +33,11 @@ class CircleAreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
         return true
-    }*/
+    }
     
     
 }

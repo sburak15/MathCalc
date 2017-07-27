@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -172,7 +171,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="eC8-CX-W1O" kind="show" id="5f2-85-pRg"/>
+                                    <segue destination="f0k-HE-fLd" kind="showDetail" id="Nmy-8c-PBu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -247,7 +246,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="eC8-CX-W1O" kind="show" id="7GW-2p-Yn0"/>
+                                    <segue destination="f0k-HE-fLd" kind="show" id="IAP-pY-3ac"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeO-eD-fgr">
@@ -316,7 +315,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="eC8-CX-W1O" kind="show" id="3MM-1q-ayK"/>
+                                    <segue destination="f0k-HE-fLd" kind="show" id="dIX-Zq-vV3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot1-dL-Tyh" userLabel="btnTriSolve">
@@ -397,7 +396,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="eC8-CX-W1O" kind="show" id="qHr-6r-M3n"/>
+                                    <segue destination="f0k-HE-fLd" kind="show" id="XFc-wi-Kx9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -496,20 +495,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="VAz-4Y-Lrk"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="DHJ-7N-ebZ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JE0-RH-27z">
-                                <rect key="frame" x="16" y="28" width="343" height="582"/>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="JE0-RH-27z" firstAttribute="leading" secondItem="PM5-Ok-5ke" secondAttribute="leadingMargin" id="6qL-K5-OO3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JE0-RH-27z" secondAttribute="trailing" id="CHr-hw-Pc5"/>
-                            <constraint firstItem="JE0-RH-27z" firstAttribute="top" secondItem="hmE-ek-hjr" secondAttribute="bottom" constant="8" symbolic="YES" id="LyG-bz-blV"/>
-                            <constraint firstItem="Ffb-yw-eU5" firstAttribute="top" secondItem="JE0-RH-27z" secondAttribute="bottom" constant="8" symbolic="YES" id="sBK-Zk-wYw"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perimeter" id="swd-NN-aRQ"/>
                 </viewController>
@@ -548,6 +538,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="circPerimSolveBtn:" destination="WLB-H2-Jc6" eventType="touchUpInside" id="eCI-kC-mGh"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter radius" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-qx-2au">
                                 <rect key="frame" x="18" y="324" width="344" height="30"/>
@@ -562,7 +555,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="QLi-uE-rQk"/>
+                                    <segue destination="f0k-HE-fLd" kind="show" id="ra4-qK-Ax0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Also known as the circumference)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqR-76-iX8">
@@ -575,6 +568,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="circPerimAnswer" destination="ZRq-j8-Y8D" id="ZaT-s8-4fV"/>
+                        <outlet property="circPerimRadiusTextField" destination="cDg-qx-2au" id="Xf5-lz-k1d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3L-5Q-A1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -611,6 +608,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="squarePerimSolveBtn:" destination="r2V-Ym-wqb" eventType="touchUpInside" id="Cak-IA-g3b"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter side length" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCZ-d5-fUW">
                                 <rect key="frame" x="18" y="324" width="344" height="30"/>
@@ -625,12 +625,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="KJb-gB-ALn"/>
+                                    <segue destination="f0k-HE-fLd" kind="show" id="a3P-fU-LdZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="squarePerimAnswer" destination="t14-Ry-tJD" id="hZc-pd-pbh"/>
+                        <outlet property="squarePerimSideTextField" destination="vCZ-d5-fUW" id="pX6-pv-RDh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNt-4M-75G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -667,6 +671,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="rectPerimSolveBtn:" destination="tHg-DS-TDq" eventType="touchUpInside" id="CGN-za-130"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter length" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Brg-aC-fjB">
                                 <rect key="frame" x="16" y="270" width="344" height="30"/>
@@ -681,7 +688,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="wbd-Fp-iTA"/>
+                                    <segue destination="f0k-HE-fLd" kind="show" id="hZL-uY-hYq"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter width" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MRu-CZ-8gq">
@@ -695,6 +702,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="rectPerimAnswer" destination="NXu-Gs-XvD" id="R8f-wt-9v0"/>
+                        <outlet property="rectPerimLengthTextField" destination="Brg-aC-fjB" id="6ZC-67-DdH"/>
+                        <outlet property="rectPerimWidthTextField" destination="MRu-CZ-8gq" id="e3J-G5-j9j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFM-yZ-0hZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -731,6 +743,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="triPerimSolveBtn:" destination="ilF-P4-DT6" eventType="touchUpInside" id="R9k-YP-ttC"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first side" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rdq-R9-hZd">
                                 <rect key="frame" x="16" y="222" width="344" height="30"/>
@@ -753,7 +768,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="x6i-eL-nQZ"/>
+                                    <segue destination="f0k-HE-fLd" kind="show" id="zqY-G4-Sc6"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter third side" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ert-z3-tZw">
@@ -767,6 +782,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.040911660850000003" green="0.1228545441" blue="0.44804485100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="triPerimAnswer" destination="eZU-h7-Myb" id="0c8-Ok-VQE"/>
+                        <outlet property="triPerimFirstSideTextField" destination="Rdq-R9-hZd" id="5in-7d-ZlD"/>
+                        <outlet property="triPerimSecondSideTextField" destination="kOi-Hh-AcP" id="3TU-4C-Jyt"/>
+                        <outlet property="triPerimThirdSideTextField" destination="ert-z3-tZw" id="tqf-VW-cJZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="85S-QP-JdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -774,7 +795,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="x6i-eL-nQZ"/>
-        <segue reference="UQi-zR-7RD"/>
+        <segue reference="zqY-G4-Sc6"/>
+        <segue reference="DHJ-7N-ebZ"/>
     </inferredMetricsTieBreakers>
 </document>

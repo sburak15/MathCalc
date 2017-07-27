@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SquareAreaViewController: UIViewController {
+class SquareAreaViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var squareAreaSideTextField: UITextField!
     @IBOutlet weak var squareAreaAnswer: UILabel!
@@ -34,11 +34,11 @@ class SquareAreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
         return true
-    }*/
+    }
     
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TriAreaViewController: UIViewController {
+class TriAreaViewController: UIViewController, UITextFieldDelegate{
 
     @IBOutlet weak var triAreaBaseTextField: UITextField!
     @IBOutlet weak var triAreaHeightTextField: UITextField!
@@ -33,11 +33,11 @@ class TriAreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   /* func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
         return true
-    }*/
+    }
     
     
 }

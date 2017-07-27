@@ -8,7 +8,17 @@
 
 import UIKit
 
-class SquarePerimViewController : UIViewController {
+class SquarePerimViewController : UIViewController, UITextFieldDelegate{
+    
+    @IBOutlet weak var squarePerimSideTextField: UITextField!
+    @IBOutlet weak var squarePerimAnswer: UILabel!
+    
+    
+    @IBAction func squarePerimSolveBtn(_ sender: Any) {
+        let squarePerimSide: Double = Double(squarePerimSideTextField.text!) ?? 0
+        let perimeter = squarePerimSide * 4
+        squarePerimAnswer.text = "Answer: " + String(perimeter) + " units"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +32,10 @@ class SquarePerimViewController : UIViewController {
     }
     
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
     
 }

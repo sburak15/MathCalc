@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RectAreaViewController: UIViewController {
+class RectAreaViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var rectAreaLengthTextField: UITextField!
     @IBOutlet weak var rectAreaWidthTextField: UITextField!
@@ -33,10 +33,10 @@ class RectAreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-   /* func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
         return true
-    } */
+    }
 
 }
